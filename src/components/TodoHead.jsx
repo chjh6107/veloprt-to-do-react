@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { getFullDate, getToday } from "../common/common";
 
 const TodoHeadBlock = styled.div`
     padding-top: 48px;
@@ -27,17 +28,8 @@ const TodoHeadBlock = styled.div`
 const TodoHead=()=>{
     return(
         <TodoHeadBlock>
-            <h1>{(()=>{
-                const now = new Date();
-                return now.getFullYear()+"년 "+(now.getMonth()+1)+"월 "+now.getDate()+"일";
-                })()}</h1>
-            <div className="day">
-                {(()=>{
-                    const now = new Date();
-                    const days="일월화수목금토";
-                    return days[now.getDay()]+"요일";
-                })()}
-            </div>
+            <h1>{getFullDate()}</h1>
+            <div className="day">{getToday()}</div>
             <div className="tasks-left">할 일 2개 남음</div>
         </TodoHeadBlock>
     )
