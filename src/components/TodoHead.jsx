@@ -2,10 +2,7 @@ import styled from "styled-components";
 import { getFullDate, getToday } from "../common/common";
 
 const TodoHeadBlock = styled.div`
-    padding-top: 48px;
-    padding-left: 32px;
-    padding-right: 32px;
-    padding-bottom: 24px;
+    padding: 48px 32px 24px 32px;
     border-bottom: 1px solid #e9ecef;
     h1{
         margin: 0;
