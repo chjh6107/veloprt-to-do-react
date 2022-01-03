@@ -1,8 +1,11 @@
+import TodoHead from "./components/TodoHead";
 import TodoTemplate from "./components/TodoTemplate"
 const App=()=> {
 
     return (
-        <TodoTemplate>하이</TodoTemplate>
+        <TodoTemplate>
+            <TodoHead/>
+        </TodoTemplate>
     )
 }
 
