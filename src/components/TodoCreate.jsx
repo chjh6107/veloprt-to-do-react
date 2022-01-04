@@ -23,7 +23,7 @@ const CircleButton = styled.button`
     bottom: 0px;
     transform: translate(-50%,50%);
     color: white;
-    border-radius: 1em;
+    /* border-radius: 1em; */
     border: none;
     outline: none;
     display: flex;
