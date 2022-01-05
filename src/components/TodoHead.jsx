@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { getFullDate, getToday } from "../common/common";
+import { useTodoState } from "./TodoContext";
 
 const TodoHeadBlock = styled.div`
     padding: 48px 32px 24px 32px;
@@ -23,6 +24,9 @@ const TodoHeadBlock = styled.div`
 `;
 
 const TodoHead=()=>{
+    const todos=useTodoState();
+    console.log(todos);
+    
     return(
         <TodoHeadBlock>
             <h1>{getFullDate()}</h1>
