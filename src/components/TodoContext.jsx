@@ -14,7 +14,7 @@ import { createContext, useContext, useReducer, useRef, useState } from "react";
 //         throw new Error("Unhandled action type: $(action.type)");
 //     };
 // }
-const initialTodos= []
+const initialTodos= [];
 const todoReducer=(state, action)=>{
     switch(action.type){
     case "CREATE":
@@ -63,7 +63,7 @@ export const useTodoDispatch=()=>{
 }
 
 export const useTodoNextId=()=>{
-    const context = useContext(TodoDispatchContext);
+    const context = useContext(TodoNextIdContext);
     if(!context) notFoundContext();
     return context;
 }
