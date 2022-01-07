@@ -1,9 +1,10 @@
+import TodoHead from "./components/TodoHead";
 import TodoTemplate from "./components/TodoTemplate"
 
 const App=()=> {
-
     return (
         <TodoTemplate>
+            <TodoHead/>
             <div>1234</div>
             <div>432</div>
             <div>내 컴퓨터 누가 해킹했어~</div>
