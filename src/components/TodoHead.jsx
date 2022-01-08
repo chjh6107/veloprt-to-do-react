@@ -8,8 +8,17 @@ const TodoHeadBlock = styled.div`
         margin: 0;
 
     }
+    .day{
+        font-size: 18px;
+        margin-top: 8px;
+        color: #9b9b9b;
+
+    }
     .tasks-left{
+        font-size: 18px;
         margin-top: 32px;
+        color: #20c997;
+        font-weight: bold;
     }
 `;
 
