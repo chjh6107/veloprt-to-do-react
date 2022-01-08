@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import moment from "moment";
 import styled from "styled-components";
 
-const ClockBlock=styled.div`
+const ClockBlock=styled.span`
+    margin-left: 10px;
     color: #5a5959;
 `;
 const Clock=()=>{

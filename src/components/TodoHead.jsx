@@ -27,7 +27,7 @@ const TodoHead = () => {
     return(
         <TodoHeadBlock>
             <h1>{getFullDate()}</h1>
-            <div className="day">{getTodayName()}</div>
+            <span className="day">{getTodayName()}</span>
             <Clock/>
             <div className="tasks-left">할 일 NaN개 남음</div>
         </TodoHeadBlock>
