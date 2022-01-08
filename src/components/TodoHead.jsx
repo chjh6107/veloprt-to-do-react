@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { getFullDate, getTodayName } from "../common/common";
+import Clock from "./Clock";
 
 const TodoHeadBlock = styled.div`
     padding: 48px 32px 24px;
@@ -27,6 +28,7 @@ const TodoHead = () => {
         <TodoHeadBlock>
             <h1>{getFullDate()}</h1>
             <div className="day">{getTodayName()}</div>
+            <Clock/>
             <div className="tasks-left">할 일 NaN개 남음</div>
         </TodoHeadBlock>
     )

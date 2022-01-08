@@ -3,7 +3,7 @@ import TodoItem from "./TodoItem";
 
 const TodoListBlock=styled.div`
     /* flex: 1; */
-    padding: 20px 0 0 30px;
+    padding: 20px 32px;
     /* overflow-y: auto; */
 `;
 
