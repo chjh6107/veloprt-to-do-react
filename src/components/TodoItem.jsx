@@ -3,9 +3,6 @@ import { MdDelete, MdDone } from "react-icons/md";
 import { css } from "styled-components";
 
 const Remove = styled.div`
-    /* align-items: center;
-    justify-content: center; */
-    /* margin-right: 20px; */
     display: flex;
     font-size: 24px;
     color: #d9dee2;
@@ -20,7 +17,6 @@ const TodoItemBlock = styled.div`
     display: flex;
     align-items: center;
     padding-bottom: 16px;
-    /* margin-bottom: 16px; */
     &:hover{
         ${Remove}{
             display: initial;
@@ -61,10 +57,11 @@ const Text = styled.div`
     }
 `;
 
-const TodoItem = ({text, done}) =>{
+const TodoItem = ({id, text, done}) =>{
+    
     return(
         <TodoItemBlock>
-            <CheckCircle done={done}>{done && <MdDone/>}</CheckCircle>
+            <CheckCircle  done={done}>{done && <MdDone/>}</CheckCircle>
             <Text done={done}>{text}</Text>
             <Remove><MdDelete/></Remove>
         </TodoItemBlock>

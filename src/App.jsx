@@ -2,14 +2,17 @@ import TodoCreate from "./components/TodoCreate";
 import TodoHead from "./components/TodoHead";
 import TodoList from "./components/TodoList";
 import TodoTemplate from "./components/TodoTemplate"
+import { TodoProvider } from "./contexts/TodoContext";
 
 const App=()=> {
     return (
-        <TodoTemplate>
-            <TodoHead />
-            <TodoList />
-            <TodoCreate />
-        </TodoTemplate>
+        <TodoProvider>
+            <TodoTemplate>
+                <TodoHead />
+                <TodoList />
+                <TodoCreate />
+            </TodoTemplate>
+        </TodoProvider>
     )
 }
 
