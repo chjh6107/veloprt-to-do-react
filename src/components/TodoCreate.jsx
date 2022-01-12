@@ -9,9 +9,9 @@ const CircleButton=styled.button`
         background-color: #4ecea5;
     }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
     font-size: 64px;
     color: #f1f1f1;
     font-weight: 100;
@@ -19,6 +19,8 @@ const CircleButton=styled.button`
     height: 80px;
     border: none;
     border-radius: 50%;
+
+
 `;
 
 const TodoCreate=()=>{
